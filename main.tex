@@ -25,6 +25,16 @@
 
 \begin{document}
     \maketitle
+Our project 2D MindFuck is based upon the programming language BrainFuck with extensions of the memory
+cell representation. In the original BrainFuck language, memory cells are represented linearly whereas 
+the user can move the pointer to the left and right to edit the value of the memory cell. This allows 
+for a Turing-Complete language that can perform basic arithmetic as well as taking in input and printing
+output. For this project, we decided to extend this even further by changing the memory cell representation
+into 2 dimensions. This allows for users to traverse the memory cells from left and right as well as up and
+down within each memory cell. In order to create this language, we will be using flex and yacc for the 
+language scanning and parsing and LLVM will provide the back-end compiling for our language. To go more in depth,
+LLVM will be used to manage the memory stored within the memory cells based upon what the user inputs into the 
+MindFuck file. 
 
 
 This language represents a dungeon crawler game maker language.
