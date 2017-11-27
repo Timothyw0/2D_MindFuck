@@ -13,8 +13,9 @@ private:
     //movePtr - move the pointer around: '<', '>', '^', 'v'
     //chPtr - increment or decrement the pointer: '+', '-'
     //manLoop - symbols to control looping mechanism: '[', ']'
+    //function - symbols to print/read in data: '.', ','
     enum TokenType{
-        movPtr, chPtr, manLoop
+        movPtr, chPtr, manLoop, function
     };
 
     //stores the current token operator type
@@ -25,5 +26,8 @@ private:
 
 public:
     enum TokenType getToken();
+		void setOpVal(string newVal) { opVal=newVal; }
+		void setIn(ifstream file)  { in=file; }
+		string getOpVal() { return opVal; }
 };
 #endif
