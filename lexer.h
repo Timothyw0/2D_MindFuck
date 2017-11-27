@@ -26,8 +26,8 @@ private:
 
 public:
     enum TokenType getToken();
-		void setOpVal(string newVal) { opVal=newVal; }
-		void setIn(ifstream file)  { in=file; }
-		string getOpVal() { return opVal; }
+    void setOpVal(string newVal) { opVal=newVal; }
+    void setIn(ifstream file)  { in=file; }
+    string getOpVal() { return opVal; }
 };
 #endif
